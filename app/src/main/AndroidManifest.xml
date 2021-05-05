@@ -9,28 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".writePage">
+        <activity android:name=".writePage"/>
+        <activity android:name=".join_membership"/>
+        <activity android:name=".login"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".join_membership"></activity>
-        <activity android:name=".login" />
-        <activity android:name=".Detail">
-
-        </activity>
-        <activity android:name=".AllChating">
-
-        </activity>
-        <activity android:name=".splash" />
-        <activity android:name=".Search">
-
-        </activity>
-        <activity android:name=".Home">
-
-        </activity>
+        <activity android:name=".Detail"/>
+        <activity android:name=".AllChating"/>
+        <activity android:name=".Search"/>
+        <activity android:name=".Home"/>
     </application>
 
 </manifest>
