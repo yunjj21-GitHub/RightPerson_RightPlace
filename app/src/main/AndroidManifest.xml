@@ -15,14 +15,16 @@
 
         </activity>
         <activity android:name=".Detail"/>
-        <activity android:name=".AllChating"/>
-        <activity android:name=".Search"/>
-        <activity android:name=".Home">
+        <activity android:name=".Chating">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Search"/>
+        <activity android:name=".Home">
+
         </activity>
     </application>
 

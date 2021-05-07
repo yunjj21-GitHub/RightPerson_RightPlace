@@ -1,11 +1,11 @@
 package org.techtown.rightperson_rightplace;
 
-public class Item {
+public class HomeItem {
     private String itemTitle;
     private int itemRequestedTime;
     private int itemPrice;
 
-    public Item(String itemTitle, int itemRequestedTime, int itemPrice) {
+    public HomeItem(String itemTitle, int itemRequestedTime, int itemPrice) {
         this.itemTitle = itemTitle;
         this.itemRequestedTime = itemRequestedTime;
         this.itemPrice = itemPrice;

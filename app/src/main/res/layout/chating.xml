@@ -4,60 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/regionText"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="지역명"
+        android:gravity="center"
+        android:text="채팅"
         android:textColor="#000000"
         android:textSize="24sp"
-        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/plusBtn"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:background="@drawable/ic_maps"
-        android:stateListAnimator="@null"
-        app:layout_constraintBottom_toBottomOf="@+id/regionText"
-        app:layout_constraintStart_toEndOf="@+id/regionText"
-        app:layout_constraintTop_toTopOf="@+id/regionText" />
-
     <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
         android:background="#B4B4B4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regionText" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_home"
+        android:id="@+id/recyclerView_chating"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="2dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_chating">
 
         <Button
             android:id="@+id/homeBtn"
@@ -65,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="#FFEB3B"
+            android:background="#42000000"
             android:text="홈" />
 
         <Button
@@ -83,19 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="#42000000"
+            android:background="#FFEB3B"
             android:text="채팅" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/searchBtn"
-        android:layout_width="26dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/ic_search"
-        android:stateListAnimator="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/plusBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

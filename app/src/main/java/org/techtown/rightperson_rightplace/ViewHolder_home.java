@@ -5,12 +5,12 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ViewHolder extends RecyclerView.ViewHolder {
+public class ViewHolder_home extends RecyclerView.ViewHolder {
     TextView title;
     TextView requestedTime;
     TextView price;
 
-    ViewHolder(View itemView){
+    ViewHolder_home(View itemView){
         super(itemView);
 
         title = itemView.findViewById(R.id.title);
