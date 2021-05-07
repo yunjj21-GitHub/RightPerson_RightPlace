@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recyclerView_chating">
 
         <Button
-            android:id="@+id/homeBtn"
+            android:id="@+id/goHomeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
@@ -58,7 +58,7 @@
             android:text="홈" />
 
         <Button
-            android:id="@+id/writeBtn"
+            android:id="@+id/goWritePageBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
